@@ -68,12 +68,14 @@ const socialChannels = [
     label: "Email",
     href: "mailto:vedanttalekar1705@gmail.com",
     icon: Mail,
+    external: false,
   },
   {
     key: "phone",
     label: "Phone",
     href: "tel:+919321793949",
     icon: Phone,
+    external: false,
   },
 ] as const;
 
