@@ -1,0 +1,148 @@
+🧠 1. NeuroNet
+AI-Powered Mental Wellness Ecosystem
+
+A next-generation mental wellness platform combining AI companionship, emotional support systems, therapist workflows, and immersive 3D interactions into one unified ecosystem. Designed to create intelligent, emotionally adaptive digital experiences focused on long-term well-being.
+
+Key Capabilities
+AI-powered emotional companion
+Therapist & appointment management
+Real-time voice and mood interaction
+Crisis-aware conversational workflows
+Immersive 3D NeuroPet integration
+
+Tech Stack
+Next.js 16
+React 19
+TypeScript
+Gemini AI
+Neon PostgreSQL
+Drizzle ORM
+Firebase
+Three.js
+TailwindCSS
+Zustand
+
+github:
+youtube:
+
+
+🚀 2. QPilot
+Autonomous Academic Intelligence System
+
+An AI-powered engineering major project focused on intelligent automation, contextual reasoning, and adaptive academic workflows designed to simplify complex educational and productivity processes.
+
+Key Capabilities
+Intelligent workflow orchestration
+Context-aware automation
+Adaptive AI interactions
+Modular system architecture
+Real-time decision pipelines
+
+Tech Stack
+Python
+FastAPI
+Next.js
+AI APIs
+PostgreSQL
+TailwindCSS
+REST APIs
+AWS 
+clerk 
+langraph 
+
+🛡️ 3. Sentinel
+Unified AI Cyber Threat Intelligence Platform
+
+An enterprise-grade AI security platform designed to detect, analyze, and correlate phishing, quishing, and email-based cyber threats through hybrid AI pipelines, RAG systems, and operational intelligence dashboards.
+
+Key Capabilities
+Multi-layer phishing analysis
+Threat intelligence correlation
+RAG-powered analyst assistant
+Real-time investigation workflows
+Security operations dashboards
+
+Tech Stack
+FastAPI
+Python
+Next.js 16
+React 19
+ChromaDB
+XGBoost
+NetworkX
+OpenRouter
+TailwindCSS
+WebSockets
+
+4. ExaGram
+Intelligent Social Learning Platform
+
+A modern AI-integrated social learning platform focused on collaborative experiences, scalable frontend systems, and intelligent educational interactions with immersive product design.
+
+Key Capabilities
+AI-enhanced social interactions
+Real-time collaborative workflows
+Scalable frontend architecture
+Adaptive learning experiences
+Modern UI/UX systems
+Tech Stack
+Next.js
+React
+TypeScript
+TailwindCSS
+Firebase
+PostgreSQL
+Vercel
+
+youtube:https://youtu.be/3QGQgL4mA2M
+github:https://github.com/thevedantt/EG3.0.git
+
+
+🌌 5. ExaVerse
+Multi-Agent AI Learning Ecosystem
+
+A unified agentic AI ecosystem that combines tutoring, research, assessments, knowledge retrieval, and collaborative AI agents into one intelligent educational infrastructure powered by persistent memory and coordinated reasoning.
+
+Key Capabilities
+Multi-agent orchestration
+Persistent AI memory systems
+AI-generated course creation
+Deep research workflows
+Retrieval-Augmented Generation (RAG)
+Tech Stack
+Next.js
+TypeScript
+PostgreSQL
+pgvector
+Drizzle ORM
+Firebase Auth
+Gemini / OpenAI APIs
+TailwindCSS
+
+github:https://github.com/thevedantt/exaverse17.git
+youtube:https://youtu.be/lj7CqKx-VF0
+
+⚖️ 6. LEGAl
+AI-Powered Legal Intelligence Engine
+
+A privacy-first legal intelligence platform that analyzes contracts using semantic retrieval, local LLMs, clause classification, and explainable AI workflows for grounded legal understanding.
+
+Key Capabilities
+Contract semantic analysis
+Clause classification & retrieval
+Risk-aware legal insights
+Local LLM inference
+Explainable AI responses
+Tech Stack
+FastAPI
+Next.js
+FAISS
+Sentence Transformers
+LM Studio
+Mistral LLM
+shadcn/ui
+
+github:https://github.com/thevedantt/LEGALMAJOR.git
+youtube:https://youtu.be/X4tZ6mnZ0lA
+
+
