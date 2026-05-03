@@ -1059,42 +1059,92 @@ export default function Home() {
 
           <motion.div
             ref={gatewayRef}
-            initial={{ opacity: 0, scale: 0.95, rotateX: 5 }}
-            whileInView={{ opacity: 1, scale: 1, rotateX: 0 }}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ margin: "-50px" }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="systems-gateway mt-10 flex w-full flex-col gap-6 rounded-2xl border border-[#c1121f]/20 bg-[rgba(10,10,10,0.92)] px-6 py-6 shadow-[0_18px_30px_rgba(0,0,0,0.6)] transition lg:flex-row lg:items-center lg:justify-between"
+            className="systems-gateway mt-16 flex w-full flex-col gap-8 rounded-3xl border border-[#c1121f]/30 bg-black/80 p-8 backdrop-blur-xl shadow-[0_25px_60px_-15px_rgba(193,18,31,0.2)] transition-all duration-500 hover:border-[#c1121f]/60 hover:shadow-[0_30px_70px_-10px_rgba(193,18,31,0.3)] lg:flex-row lg:items-center lg:justify-between relative overflow-hidden group"
           >
-            <div className="flex items-center gap-6">
-              <div className="systems-gateway-image relative h-36 w-36 overflow-hidden rounded-xl border border-white/10">
+            {/* Background Accent */}
+            <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-[#c1121f]/5 blur-[100px] pointer-events-none" />
+            <div className="absolute -left-20 -bottom-20 h-64 w-64 rounded-full bg-[#c1121f]/5 blur-[100px] pointer-events-none" />
+            
+            <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-10 relative z-10">
+              <div className="systems-gateway-image relative h-40 w-40 shrink-0 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
                 <img
                   src="/explore.png"
                   alt="Gotham systems preview"
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110"
                 />
-                <div className="systems-gateway-image-overlay" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                <div className="absolute bottom-3 left-3 flex items-center gap-2">
+                  <div className="h-1.5 w-1.5 rounded-full bg-[#c1121f] animate-pulse" />
+                  <span className="font-mono text-[0.5rem] text-white/60 tracking-[0.3em]">GATEWAY_ACTIVE</span>
+                </div>
               </div>
-              <div className="flex flex-col gap-3">
-                <p className="font-mono text-xs uppercase tracking-[0.5em] text-zinc-400">
-                  ARCHIVED SYSTEMS
-                </p>
-                <h3 className="font-heading text-4xl text-[#eaeaea]">
-                  EXPLORE GOTHAM SYSTEMS
+              
+              <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-2">
+                  <div className="flex items-center gap-3">
+                    <span className="h-px w-6 bg-[#c1121f]" />
+                    <p className="font-mono text-[0.65rem] font-bold uppercase tracking-[0.4em] text-[#c1121f]">
+                      INVESTIGATE OTHER GOTHAM CASE FILES AND SYSTEMS
+                    </p>
+                  </div>
+                  <p className="font-mono text-xs uppercase tracking-[0.5em] text-zinc-500 ml-9">
+                    ARCHIVED SYSTEMS
+                  </p>
+                </div>
+                
+                <h3 className="font-heading text-5xl text-white tracking-tight leading-none">
+                  EXPLORE GOTHAM <span className="text-[#c1121f]">SYSTEMS</span>
                 </h3>
-                <p className="max-w-xl text-sm leading-6 text-[#a1a1aa]">
+                
+                <p className="max-w-2xl text-sm leading-7 text-zinc-400">
                   Access the complete archive of experimental AI systems, intelligent
                   infrastructures, full-stack applications, and classified Gotham projects.
+                  Unlock restricted data nodes and explore the evolution of tactical engineering.
                 </p>
               </div>
             </div>
-            <Button
-              variant="outline"
-              size="sm"
-              className="systems-gateway-cta w-fit border-[#c1121f]/40 bg-black/70 px-4 py-2 text-xs uppercase tracking-[0.3em] text-zinc-200 hover:border-[#c1121f] hover:text-white"
-              asChild
-            >
-              <a href="/projects">Access Full Database</a>
-            </Button>
+            
+            <div className="flex shrink-0 flex-col items-start gap-6 lg:items-end lg:justify-end relative z-10">
+              <p className="font-mono text-[0.85rem] font-black uppercase tracking-[0.4em] text-[#c1121f] animate-pulse">
+                (CLICK HERE FOR OTHER PROJECTS)
+              </p>
+              <motion.div
+                animate={{
+                  scale: [1, 1.05, 1],
+                  boxShadow: [
+                    "0 0 20px rgba(193, 18, 31, 0.2)",
+                    "0 0 40px rgba(193, 18, 31, 0.5)",
+                    "0 0 20px rgba(193, 18, 31, 0.2)",
+                  ],
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+              >
+                <Button
+                  variant="outline"
+                  className="systems-gateway-cta group/btn relative overflow-hidden border-[#c1121f] bg-[#c1121f]/10 px-10 py-7 text-sm uppercase tracking-[0.4em] text-white transition-all duration-500 rounded-xl"
+                  asChild
+                >
+                  <a
+                    href="https://vedprojects17.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3"
+                  >
+                    <div className="h-2 w-2 rounded-full bg-[#c1121f] shadow-[0_0_10px_#c1121f]" />
+                    <span className="relative z-10 font-bold italic">Initialize Uplink</span>
+                    <div className="absolute inset-0 bg-[#c1121f] translate-y-full group-hover/btn:translate-y-0 transition-transform duration-500 ease-out" />
+                  </a>
+                </Button>
+              </motion.div>
+            </div>
           </motion.div>
         </div>
       </section>
